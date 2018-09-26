@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 //Auth
 import Register from '../components/auth/Register';
-import Login from '../components/auth/Login';
+import RegisterLogin from '../components/auth/RegisterLogin';
 
 // hoc
 import Layout from '../hoc/Layout';
@@ -17,7 +17,7 @@ export default class extends Component {
       <Layout>
         <Switch>
           <Route path="/register" exact component={Register} />
-          <Route path="/login" exact component={Login} />
+          <Route path="/login" exact component={RegisterLogin} />
           <Route path="/" exact component={Home} />
         </Switch>
       </Layout>
