@@ -11,6 +11,9 @@ export default class extends Component {
         email: {
             element: 'input',
             value: '',
+            valid: false,
+            touched: false,
+            validationMessage:''
             config:{
                 name: 'email_input',
                 type: 'email',
@@ -19,10 +22,7 @@ export default class extends Component {
             validation:{
                 required: true,
                 email: true
-            },
-            valid: false,
-            touched: false,
-            validationMessage:''
+            }         
         },
         password: {
             element: 'input',
